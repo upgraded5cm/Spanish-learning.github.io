@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Vamos! 西语学习中心</title>
+    <style>
+        :root {
+            --primary: #C53030; /* 西班牙红 */
+            --bg: #FDFBF7;
+            --text: #2D3748;
+        }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; }
+        
+        /* 侧边栏 */
+        nav { width: 250px; background: white; height: 100vh; border-right: 1px solid #E2E8F0; padding: 20px; position: fixed; }
+        nav h1 { color: var(--primary); font-size: 24px; margin-bottom: 30px; }
+        nav a { display: block; padding: 12px; color: var(--text); text-decoration: none; border-radius: 8px; margin-bottom: 5px; }
+        nav a:hover { background: #F7FAFC; color: var(--primary); }
+
+        /* 主内容区 */
+        main { margin-left: 280px; padding: 40px; width: 100%; max-width: 800px; }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        h2 { border-left: 4px solid var(--primary); padding-left: 15px; margin-top: 0; }
+        
+        /* 任务列表 */
+        .task-item { display: flex; align-items: center; padding: 10px 0; border-bottom: 1px solid #EDF2F7; }
+        .task-item input { margin-right: 15px; transform: scale(1.2); }
+        
+        /* 动词表 */
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { text-align: left; padding: 10px; border-bottom: 1px solid #EDF2F7; }
+        .tag { background: #FED7D7; color: #9B2C2C; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>¡Vamos!</h1>
+    <a href="#today">📅 今日任务</a>
+    <a href="#grammar">📖 核心语法</a>
+    <a href="#verbs">🔁 动词变形</a>
+    <a href="#words">💡 常用词汇</a>
+    <a href="#B2">🚀 B2 冲刺之路</a>
+</nav>
+
+<main>
+    <section id="today">
+        <div class="card">
+            <h2>今日任务 (Hoy)</h2>
+            <div class="task-item"><input type="checkbox"> 学习 20 个新单词 (B2 经济类词汇)</div>
+            <div class="task-item"><input type="checkbox"> 练习 5 个虚拟式现在时句子</div>
+            <div class="task-item"><input type="checkbox"> 听 15 分钟 RTVE 新闻播客</div>
+            <div class="task-item"><input type="checkbox"> 在评论区尝试写一段 50 字短文</div>
+        </div>
+    </section>
+
+    <section id="verbs">
+        <div class="card">
+            <h2>最常用动词：SER (是)</h2>
+            <span class="tag">不规则动词</span>
+            <table>
+                <tr><th>人称</th><th>陈述式现在时</th><th>简单过去时</th></tr>
+                <tr><td>Yo</td><td>soy</td><td>fui</td></tr>
+                <tr><td>Tú</td><td>eres</td><td>fuiste</td></tr>
+                <tr><td>Él/Ella</td><td>es</td><td>fue</td></tr>
+                <tr><td>Nosotros</td><td>somos</td><td>fuimos</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="grammar">
+        <div class="card">
+            <h2>语法要点：虚拟式 (Subjuntivo)</h2>
+            <p><strong>B2 核心：</strong> 用于表达愿望、怀疑、情感或不确定性。</p>
+            <blockquote>Ejemplo: Espero que <b>tengas</b> un buen día. (我希望你今天过得愉快。)</blockquote>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
